@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Title and favicon icon-->
+    <title>Exercise 1 - A simple application</title>
+    <link rel="icon" type="image/png" href="https://image.flaticon.com/icons/png/512/4896/4896203.png" />
+
+    <!--Link Google Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+    <!--Link Font Awesome-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossOrigin="anonymous" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+   <!--Link Bootstrap -->
+        <link href="styles/bootstrap.min.css" rel="stylesheet">
+        <!--Link My style-->
+        <link rel="stylesheet" href="styles/main.css">
+    </head>
+    <body>
+<div class="container">
+    <div class="row">
+        <!--Side bar menu-->
+        <ul class="col-3 sidebar-menu box">
+            <li>
+                <a href="https://nhatsang.tech/" class="sidebar-item">
+                    <i class="fal fa-home sidebar-icon text-white"></i>
+                    <span class="sidebar-text text-white">Home</span>
+                    <span class="sidebar-status"></span>
+                </a></li>
+            <li><a href="#" class="sidebar-item">
+                <i class="fab fa-java sidebar-icon text-white"></i>
+                <span class="sidebar-text text-white">Survey</span>
+            </a></li>
+            <li><a href="../Download" class="sidebar-item sidebar-item--active">
+                <i class="fab fa-java sidebar-icon text-white"></i>
+                <span class="sidebar-text text-white">Download</span>
+            </a></li>
+            <li><a href="../Cart" class="sidebar-item">
+                <i class="fab fa-java sidebar-icon text-white"></i>
+                <span class="sidebar-text text-white">Cart</span>
+            </a></li>  
+            <li><a href="../sqlGateway" class="sidebar-item">
+                <i class="fab fa-java sidebar-icon text-white"></i>
+                <span class="sidebar-text text-white">sqlGateway</span>
+            </a></li> 
+            <li><a href="../email" class="sidebar-item">
+                <i class="fab fa-java sidebar-icon text-white"></i>
+                <span class="sidebar-text text-white">Email</span>
+            </a></li>
+            <li><a href="../userAdmin" class="sidebar-item">
+                <i class="fab fa-java sidebar-icon text-white"></i>
+                <span class="sidebar-text text-white">userAdmin</span>
+            </a></li>    
+        </ul>
+
+       <!--Main content-->
+        <div class="col-9">
+           
+            <!--Form input-->
+            <form action="survey" method="post" class="container box">
+                <table class="table table-borderless">
+                    <tbody>
+                    <tr>
+                        <h1 class ="text-white">Survey</h1>
+                        <p>If you have a moment, we'd appreciate it if you would fill out this survey.</p>
+                        <h2>Your information:</h2>
+                    </tr>
+                    <tr>
+                     <tr>
+                        <td class="text-right td-label">
+                            <label class="text-white">First Name</label>
+                        </td>
+                        <td>
+                            <input type="text" class="input-focus usid" name="firstName" required><br>
+                        </td></tr>
+                    <tr>
+                        <td class="text-right td-label">
+                            <label class="text-white">Last Name</label>
+                        </td>
+                        <td>
+                            <input type="text" class="input-focus usid" name="lastName" required><br>
+                        </td></tr>
+                    <tr>
+                         <td class="text-right td-label">
+                            <label class="text-white">Email</label>
+                        </td>
+                            <td>
+                                <input type="email" class="input-focus usid" name="email" required><br>
+                            </td></tr>
+                        <td class="text-right"></td>
+
+                        <h2>How did you hear about us?</h2>
+                        <p><input type=radio name="heardFrom" value="Search Engine">Search engine
+                            <input type=radio name="heardFrom" value="Friend">Word of mouth
+                            <input type=radio name="heardFrom" value="Other">Other</p>
+             
+                         <h2>Would you like to receive announcements about new CDs and special offers?</h2>
+                         <p><input type="checkbox" name="wantsUpdates" checked>YES, I'd like that.</p>
+             
+                         <p>Please contact me by:
+                             <select name="contactVia">
+                                 <option value="Both" selected>Email or postal mail</option>
+                                 <option value="Email">Email only</option>
+                                 <option value="Postal Mail">Postal mail only</option>
+                             </select>
+                         </p>
+                        <td>
+                        <span class="btn-color">
+        						<input type="submit" value="Submit" class="btn btn-primary btn-test">
+    						</span>
+    						</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </div>
+</div>
+
+ <div class="container">
+        <div class="h4 text-center text-white mb-4 title">% WORK COMPLETE</div>
+        <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+          <div class="card-body box width100">
+            <div class="row"> 
+              <div class="col-md-6">
+                <div class="progress-container progress-primary"><span class="progress-badge text-white">Nguyễn Hoàng Nhật</span>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10"
+                      data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                      aria-valuemax="100" style="width: 100%;"></div><span class="progress-value text-white">100%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="progress-container progress-primary"><span class="progress-badge text-white">Phan Thanh Sang</span>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10"
+                      data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                      aria-valuemax="100" style="width: 100%;"></div><span class="progress-value text-white">100%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        
+        
+
+<!--Float button back to home-->
+<a href="https://nhatsang.tech/#exercise" class="btn-float" rel="tooltip" title="Back to home page">
+    <i class="fa fa-home icon-btn-float"></i>
+</a>
+
+
+<!--Footer-->
+<footer class="footer">
+    <div class="container text-center">
+        <a class="cc-facebook btn btn-link" target="blank" href="http://facebook.com/"
+           rel="tooltip" title="Follow me on Facebook">
+            <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+        </a>
+        <a class="cc-github btn btn-link" target="blank" href="https://github.com/" rel="tooltip"
+           title="Follow me on Github">
+            <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+        </a>
+        <a class="cc-linkedin btn btn-link" target="blank" href="https://www.linkedin.com/"
+           rel="tooltip" title="Connect me on LinkedIn">
+            <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+        </a>
+        <a class="cc-youtube btn btn-link" target="blank"
+           href="https://www.youtube.com/" rel="tooltip"
+           title="Subscribe me on Youtube">
+            <i class="fa fa-youtube fa-2x " aria-hidden="true"></i>
+        </a>
+    </div>
+    <div class="text-center text-muted">
+        <p>
+            &copy; 2021 Nguyễn Hoàng Nhật (19110031) - Phan Thanh Sang (19110276).<br>
+            Web app hosting by <a class="credit" href="https://www.heroku.com/home">Heroku</a><br>
+        </p>
+    </div>
+</footer>
+
+<script>
+    // UpperCase first character of each word in Input name
+    ((document) => {
+    	let $txtCustomerName = document.getElementById('customer-name');
+
+        function capitalize_Words(str) { return str.replace(/\w\S*/g, function (txt) { return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase(); }); }
+        function changeValue() { $txtCustomerName.value = capitalize_Words($txtCustomerName.value).replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/ +(?= )/g, ''); }
+
+        $txtCustomerName.addEventListener('keydown', changeValue, false);
+        $txtCustomerName.addEventListener('keyup', changeValue, false);
+        $txtCustomerName.addEventListener('keypress', changeValue, false);
+    })(document);
+</script>
+
+</body>
+</html>
