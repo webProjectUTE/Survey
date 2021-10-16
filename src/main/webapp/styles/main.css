@@ -34,7 +34,7 @@ body {
   background-color: white;
   border-radius: 10px;
   width: 250px;
-  max-height: 420px;
+  max-height: 465px;
 }
 
 .sidebar-item {
@@ -88,7 +88,7 @@ form {
 }
 
 label {
-  margin-top: 18px;
+  margin-top: 23px;
 }
 
 .instruction {
@@ -445,7 +445,7 @@ footer .btn-link {
   font-size: 18px;
 }
 
-/*
+
 .progress-container .progress-bar {
   height: 5px;
   -webkit-transform: scaleX(0);
@@ -457,7 +457,7 @@ footer .btn-link {
   -webkit-transform-origin: 0% 0%;
           transform-origin: 0% 0%;
 }
-*/
+
 
 .progress-container .progress {
   height: 5px;
@@ -487,10 +487,10 @@ input[type="submit" i]{
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
+    color: #fff;
     cursor: pointer;
     border-radius: 8px;
     z-index: 1;
-    font-weight: bold;
 }
 
 .btn-color{
@@ -613,8 +613,8 @@ input[type="submit" i]{
 
 /*Design form*/
 .box{
-  width: 700px;
- padding: 40px;
+  width: 808px;
+  padding: 40px;
   background: #222222;
   background: repeating-linear-gradient(45deg, #2b2b2b 0%, #2b2b2b 10%, #222222 50%);
   border: 1px solid rgb(44,44,43);
@@ -626,11 +626,6 @@ input[type="submit" i]{
   20px 20px 20px #000000a6;
   text-align: center;
   position: relative;
-  left: 50%;
-  top: 15%;
-transform: translateY(-50%);
-transform: translateX(-50%);
-text-align: center;
 }
 .box h1{
   color: #fff;
@@ -650,7 +645,7 @@ text-align: center;
   width: 300px;
   outline: none;
   font-family: 'cabin' Arial, Helvetica, sans-serif;
-  font-size: 15px;
+ font-size: 15px;
   font-weight: 400;
   text-shadow: 0 -1px 0 #000;
   border-radius: 24px;
@@ -718,6 +713,9 @@ text-align: center;
 	color: white;
 }
 
+.text-bold {
+	 font-weight: bold;
+}
 .width100 {
 	width: 100% !important;
 }
@@ -726,12 +724,14 @@ text-align: center;
 	margin-top: 14px;
 }
 
-.text-black {
-	color: black;
+.space {
+	display: flex;
+	align-items: space-around;
+	flex-wrap: wrap
 }
 
-.text-content {
-	text-align: center;
+.p--n {
+	padding: 0!important;
 }
 
 .labeltext {
@@ -740,11 +740,12 @@ text-align: center;
 	color: white;
 }
 
-.p--n {
-	padding: 0!important;
+.colorblue {
+	color: blue;
 }
-
-.positionrelative {
-	position: relative;
+.centerbox {
+	left: 50%;
+  top: 25%;
+transform: translateY(-50%);
+transform: translateX(-50%);
 }
-

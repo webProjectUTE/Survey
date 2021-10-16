@@ -7,7 +7,7 @@
     <!--Title and favicon icon-->
     <title>Exercise 1 - A simple application</title>
     <link rel="icon" type="image/png" href="https://image.flaticon.com/icons/png/512/4896/4896203.png" />
-
+	
     <!--Link Google Font-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
@@ -62,7 +62,7 @@
         <div class="col-9">
            
             <!--Form input-->
-            <form action="survey" method="post" class="container box">
+            <form action="survey" method="post" class="container box p--n">
                 <table class="table table-borderless">
                     <tbody>
                     <tr>
@@ -73,34 +73,34 @@
                     <tr>
                      <tr>
                         <td class="text-right td-label">
-                            <label class="text-white">First Name</label>
+                            <label class="labeltext">First Name</label>
                         </td>
-                        <td>
+                        <td class ="p--n">
                             <input type="text" class="input-focus usid" name="firstName" required><br>
                         </td></tr>
                     <tr>
                         <td class="text-right td-label">
-                            <label class="text-white">Last Name</label>
+                            <label class="labeltext">Last Name</label>
                         </td>
-                        <td>
+                        <td class ="p--n">
                             <input type="text" class="input-focus usid" name="lastName" required><br>
                         </td></tr>
                     <tr>
                          <td class="text-right td-label">
-                            <label class="text-white">Email</label>
+                            <label class="labeltext">Email</label>
                         </td>
-                            <td>
+                            <td class ="p--n">
                                 <input type="email" class="input-focus usid" name="email" required><br>
                             </td></tr>
                         <td class="text-right"></td>
 
-                        <h2>How did you hear about us?</h2>
+                        <p class = "text-bold">How did you hear about us?</p>
                         <p><input type=radio name="heardFrom" value="Search Engine">Search engine
                             <input type=radio name="heardFrom" value="Friend">Word of mouth
                             <input type=radio name="heardFrom" value="Other">Other</p>
              
-                         <h2>Would you like to receive announcements about new CDs and special offers?</h2>
-                         <p><input type="checkbox" name="wantsUpdates" checked>YES, I'd like that.</p>
+                         <p class = "text-bold">Would you like to receive announcements about new CDs and special offers?</p>
+                         <p><input type="checkbox" class ="colorblue" name="wantsUpdates" checked>YES, I'd like that.</p>
              
                          <p>Please contact me by:
                              <select name="contactVia">
@@ -154,8 +154,10 @@
 
 <!--Float button back to home-->
 <a href="https://nhatsang.tech/#exercise" class="btn-float" rel="tooltip" title="Back to home page">
-    <i class="fa fa-home icon-btn-float"></i>
-</a>
+		<span class="background-float">
+			<i class="fa fa-home icon-btn-float"></i> 
+		</span>   			   
+	</a>
 
 
 <!--Footer-->
@@ -200,6 +202,11 @@
         $txtCustomerName.addEventListener('keypress', changeValue, false);
     })(document);
 </script>
-
+	<script src="js/core/jquery.3.2.1.min.js"></script>
+    <script src="js/core/popper.min.js"></script>
+    <script src="js/core/bootstrap.min.js"></script>
+    <script src="js/now-ui-kit.js?v=1.1.0"></script>
+    <script src="js/aos.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
 </html>
