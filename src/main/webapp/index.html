@@ -95,20 +95,23 @@
                         <td class="text-right"></td>
 
                         <p class = "text-bold">How did you hear about us?</p>
-                        <p><input type=radio name="heardFrom" value="Search Engine">Search engine
-                            <input type=radio name="heardFrom" value="Friend">Word of mouth
-                            <input type=radio name="heardFrom" value="Other">Other</p>
+                        <p><input type=radio class ="input__checkbox input__checkbox--circle" name="heardFrom" value="Search Engine">Search engine
+                            <input type=radio class ="input__checkbox input__checkbox--circle" name="heardFrom" value="Friend">Word of mouth
+                            <input type=radio class ="input__checkbox input__checkbox--circle" name="heardFrom" value="Other">Other</p>
              
                          <p class = "text-bold">Would you like to receive announcements about new CDs and special offers?</p>
-                         <p><input type="checkbox" class ="colorblue" name="wantsUpdates" checked>YES, I'd like that.</p>
+                         <p><input type="checkbox" class ="input__checkbox" name="wantsUpdates" checked>YES, I'd like that.</p>
              
-                         <p>Please contact me by:
-                             <select name="contactVia">
-                                 <option value="Both" selected>Email or postal mail</option>
-                                 <option value="Email">Email only</option>
-                                 <option value="Postal Mail">Postal mail only</option>
-                             </select>
-                         </p>
+             			  <label class="custom-select--no-bootstrap">
+        Please contact me by:
+        <select name="contactVia">
+            <option value="Both">Email or postal mail</option>
+            <option value="Email">Email only</option>
+            <option value="Postal Mail">Postal mail only</option>
+        </select>
+    						</label>
+
+                        
                         <td>
                         <span class="btn-color">
         						<input type="submit" value="Submit" class="btn btn-primary btn-test">

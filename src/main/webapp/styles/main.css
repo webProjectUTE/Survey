@@ -749,3 +749,113 @@ input[type="submit" i]{
 transform: translateY(-50%);
 transform: translateX(-50%);
 }
+
+/*Design Check*/
+.input__checkbox{
+	position: relative;
+	left: -8px;
+	margin-left: 16px;
+}
+
+.input__checkbox--circle.input__checkbox:After{
+	border-radius: 50%;
+}
+
+.input__checkbox--circle.input__checkbox:checked:After{
+    border-radius: 50%;
+    background-color: #3684e4;
+}
+
+.input__checkbox:After{
+	width: 15px;
+	height: 15px;
+    border-radius: 4px;
+    top: -3px;
+    left: 0px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+.input__checkbox:checked:After{
+	width: 15px;
+	height: 15px;
+    border-radius: 4px;
+    top: -3px;
+    left: 0px;
+    position: relative;
+    background-color: #b12427;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+/*Design select*/
+.custom-select--no-bootstrap {
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    color: #888;
+    margin-top: 25px;
+  }
+  
+  .custom-select--no-bootstrap select {
+    display: block;
+    width: 250px;
+    min-height: 35px;
+    background: #cbe7ff;
+    border-radius: 3px;
+    border: 2px solid #2196F3;
+    outline: none;
+    padding: 0 20px 0 10px;
+    margin-top: 5px;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+  }
+  
+  .custom-select--no-bootstrap::after {
+    content: '';
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent;
+    border-top-color: #222;
+    display: inline-block;
+    border-radius: 2px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+  }
+  
+  .custom-select--no-bootstrap .selector-options {
+    list-style: none;
+    padding: 5px 0;
+    margin: 0;
+    background: #11436b;
+    color: #fff;
+    border-radius: 4px;
+    z-index: 1;
+    width: 96%;
+    position: absolute;
+    left: 2%;
+    top: 35%;
+  }
+  
+  .custom-select--no-bootstrap .selector-options li {
+    height: 35px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .custom-select--no-bootstrap .selector-options li:hover {
+    background: #03A9F4;
+  }
